@@ -8,6 +8,10 @@ namespace ActorController
     {
         public Movement2D MovementController { get; set; }
 
+        private void Start() {
+            MovementController = GetComponent<Movement2D>();
+        }
+
         private void Update() {
             if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.X))){
                 MovementController.Jump(1);
@@ -17,4 +21,3 @@ namespace ActorController
         }
     }
 }
-

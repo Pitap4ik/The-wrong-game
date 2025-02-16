@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public static class GeneralExtensions
+namespace GeneralExtensions
 {
-    public static bool HasComponent <T>(this GameObject obj) where T:Component
+    public static class Components
     {
-        return obj.GetComponent<T>() != null;
+        public static bool HasComponent <T>(this GameObject obj) where T:Component
+        {
+            return obj.GetComponent<T>() != null;
+        }
     }
 }

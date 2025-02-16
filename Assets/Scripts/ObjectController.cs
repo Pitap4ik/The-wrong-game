@@ -13,10 +13,10 @@ public class ObjectController : MonoBehaviour
     void Update()
     {
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.X))){
-            Rigidbody.AddForce(new Vector2(0, 50f), ForceMode2D.Impulse);
+            Rigidbody.AddForce(new Vector2(0, 5f), ForceMode2D.Impulse);
         }
 
-        _velocity.x = Input.GetAxis("Horizontal") * 25f;
+        _velocity.x = Input.GetAxis("Horizontal") * 5f;
         Rigidbody.linearVelocityX = _velocity.x;
     }
 }

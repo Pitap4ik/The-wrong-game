@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ActorController
 {
     [CreateAssetMenu(fileName = "PlayerStats", menuName = "Player Stats", order = 1)]
-    public class PlayerStats : ActorStats<PlayerJumpStats, PlayerMoveStats> 
+    public class PlayerStats : ActorStats<PlayerJumpStats, PlayerMoveStats>
     {
         
     }

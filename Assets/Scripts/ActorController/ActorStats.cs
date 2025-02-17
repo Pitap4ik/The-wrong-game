@@ -3,15 +3,17 @@ using UnityEngine;
 
 namespace ActorController
 {
-    public class ActorStats <T, U> : ScriptableObject 
+    public class ActorStats <T, U> : ScriptableObject
     where T: JumpStats where U: MoveStats
     {
         public T jumpStats;
         public U moveStats;
     }
 
+    public class ActorStats : ActorStats<JumpStats, MoveStats> {}
+
     [Serializable]
-    public class JumpStats {
+    public class JumpStats{
         public float JumpPower = 20;
     }
 

@@ -4,9 +4,11 @@ using UnityEngine;
 namespace ActorController 
 {
     [RequireComponent(typeof(Movement2D))]
-    public class PlayerController : MonoBehaviour, IActorController
+    public class PlayerController : MonoBehaviour, IActorController<PlayerStats>
     {
+        [SerializeField] private PlayerStats _stats;
         public Movement2D MovementController { get; set; }
+        public PlayerStats Stats { get => _stats; set => _stats = value; }
 
         private void Start() {
             MovementController = GetComponent<Movement2D>();

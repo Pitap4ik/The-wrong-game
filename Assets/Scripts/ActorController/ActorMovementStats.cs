@@ -15,9 +15,8 @@ namespace ActorController
 
     [Serializable]
     public class JumpStats{
-        public float baseGravityScale = 20f;
-        public float fallSpeed = 20f;
-        public float jumpPower = 20;
+        public float fallSpeed = 10f;
+        public float maxJumpPower = 20f;
         public LayerMask groundLayer;
         public Vector2 groundCheckBoxSize = new Vector2(0.5f, 0.1f);
         public float groundCheckCastDistance = 0.5f;

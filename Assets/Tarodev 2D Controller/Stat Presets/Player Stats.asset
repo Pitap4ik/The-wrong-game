@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   CollisionLayers:
     serializedVersion: 2
-    m_Bits: 769
+    m_Bits: 1
   CharacterSize:
     Height: 1.35
     Width: 0.9
@@ -50,7 +50,7 @@ MonoBehaviour:
   AllowWalls: 1
   ClimbableLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   WallJumpTotalInputLossTime: 0.2
   WallJumpInputLossReturnTime: 0.5
   RequireInputPush: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   SnapToLadders: 1
   LadderLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
   LadderSnapTime: 0.05
   LadderPopForce: 5
   LadderClimbSpeed: 8

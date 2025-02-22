@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: PlayerMovementStats
   m_EditorClassIdentifier: 
   jumpStats:
-    baseGravityScale: 20
-    fallSpeed: 40
-    jumpPower: 20
+    fallSpeed: 15
+    maxJumpPower: 10
     groundLayer:
       serializedVersion: 2
       m_Bits: 64
-    groundCheckBoxSize: {x: 1.5, y: 0.2}
-    groundCheckCastDistance: 0.75
-    coyoteCheckBoxSize: {x: 1.5, y: 0.2}
-    coyoteCheckCastDistance: 1.11
+    groundCheckBoxSize: {x: 0.44, y: 0.2}
+    groundCheckCastDistance: 0.66
+    coyoteCheckBoxSize: {x: 0.43, y: 0.2}
+    coyoteCheckCastDistance: 0.85
+    jumpBufferedTime: 0.15
+    extraGravityScale: 5
   moveStats:
     baseSpeed: 9

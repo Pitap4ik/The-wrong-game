@@ -10,12 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 406be096c08c88e4681b706455c64009, type: 3}
-  m_Name: PlayerStats
+  m_Name: PlayerMovementStats
   m_EditorClassIdentifier: 
   jumpStats:
-    JumpPower: 20
-    BufferedJumpTime: 0.15
-    CoyoteTime: 0.15
+    baseGravityScale: 20
+    fallSpeed: 40
+    jumpPower: 20
+    groundLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    groundCheckBoxSize: {x: 1.5, y: 0.2}
+    groundCheckCastDistance: 0.75
+    coyoteCheckBoxSize: {x: 1.5, y: 0.2}
+    coyoteCheckCastDistance: 1.11
   moveStats:
-    BaseSpeed: 9
-    Acceleration: 50
+    baseSpeed: 9

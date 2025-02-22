@@ -1,8 +1,7 @@
 namespace ActorController
 {
-    public interface IActorController<T>
+    public interface IActorController
     {
-        public Movement2D MovementController { get; set; }
-        public T Stats { get; set; }
+        public PlayerMovement2D MovementController { get; set; }
     }
 }

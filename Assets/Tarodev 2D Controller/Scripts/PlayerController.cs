@@ -786,7 +786,6 @@ namespace TarodevController
                 goalVelocity.x = (goalX - _framePosition.x) / _delta;
 
                 SetVelocity(goalVelocity);
-
                 return;
             }
 
